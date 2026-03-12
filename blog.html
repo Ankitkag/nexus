@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Study Tips | Nexus Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+    .blog-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    .blog-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .blog-content {
+      padding: 25px;
+    }
+    .blog-category {
+      color: var(--secondary-blue);
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .blog-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .blog-excerpt {
+      color: var(--text-light);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    .read-more {
+      color: var(--primary-blue);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .read-more:hover {
+      color: var(--secondary-blue);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fa-solid fa-graduation-cap"></i>NexusEdu</a>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Live Classes</a></li>
+        <li><a href="library.html">Video Library</a></li>
+        <li><a href="materials.html">Study Material</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="classes.html" class="btn btn-primary" style="color: white;">Join Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Education Blog & Tips</h1>
+      <p>Articles, study strategies, and academic guidance.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        <!-- Post 1 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Study Setup" class="blog-img">
+          <div class="blog-content">
+            <div class="blog-category">Study Tips</div>
+            <h2 class="blog-title">10 Scientifically Proven Ways to Learn Faster</h2>
+            <p class="blog-excerpt">Discover cognitive strategies like spaced repetition and active recall to drastically improve your information retention before exams.</p>
+            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exams" class="blog-img">
+          <div class="blog-content">
+            <div class="blog-category">Exam Prep</div>
+            <h2 class="blog-title">How to Manage Stress During Board Exams</h2>
+            <p class="blog-excerpt">Practical advice on maintaining a healthy work-life balance, effective scheduling, and mental health practices during peak study seasons.</p>
+            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Physics Diagram" class="blog-img">
+          <div class="blog-content">
+            <div class="blog-category">Subject Guide</div>
+            <h2 class="blog-title">Mastering Electromagnetism Formulars</h2>
+            <p class="blog-excerpt">A comprehensive guide breaking down complex magnetic fields and Faraday's law of induction into easy-to-digest visual concepts.</p>
+            <a href="#" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 NexusEdu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

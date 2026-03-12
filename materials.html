@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Material | Nexus Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .subject-section {
+      margin-bottom: 50px;
+    }
+    .subject-title {
+      font-size: 1.8rem;
+      color: var(--primary-blue);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .material-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .material-card {
+      background: var(--white);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .material-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      border-color: var(--secondary-blue);
+    }
+    .pdf-icon {
+      font-size: 2.5rem;
+      color: #ef4444; /* PDF Red */
+    }
+    .material-info {
+      flex: 1;
+    }
+    .material-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 1.05rem;
+    }
+    .material-meta {
+      font-size: 0.85rem;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+    .btn-download-sm {
+      display: inline-block;
+      padding: 5px 12px;
+      background: var(--primary-blue);
+      color: white;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .btn-download-sm:hover {
+      background: var(--secondary-blue);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><i class="fa-solid fa-graduation-cap"></i>NexusEdu</a>
+      <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Live Classes</a></li>
+        <li><a href="library.html">Video Library</a></li>
+        <li><a href="materials.html" class="active">Study Material</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="classes.html" class="btn btn-primary" style="color: white;">Join Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Study Material</h1>
+      <p>Download comprehensive notes, formulas, and assignment PDFs.</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      
+      <!-- Mathematics -->
+      <div class="subject-section">
+        <h2 class="subject-title"><i class="fa-solid fa-square-root-variable"></i> Mathematics</h2>
+        <div class="material-grid">
+          <div class="material-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <div class="material-info">
+              <h3 class="material-title">Calculus Formula Sheet</h3>
+              <div class="material-meta">PDF • 2.4 MB • Chapter 5</div>
+              <a href="#" class="btn-download-sm"><i class="fa-solid fa-download"></i> Download</a>
+            </div>
+          </div>
+          <div class="material-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <div class="material-info">
+              <h3 class="material-title">Integration Practice Set</h3>
+              <div class="material-meta">PDF • 1.8 MB • Chapter 6</div>
+              <a href="#" class="btn-download-sm"><i class="fa-solid fa-download"></i> Download</a>
+            </div>
+          </div>
+          <div class="material-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <div class="material-info">
+              <h3 class="material-title">Matrices Notes</h3>
+              <div class="material-meta">PDF • 3.1 MB • Chapter 3</div>
+              <a href="#" class="btn-download-sm"><i class="fa-solid fa-download"></i> Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physics -->
+      <div class="subject-section">
+        <h2 class="subject-title"><i class="fa-solid fa-atom"></i> Physics</h2>
+        <div class="material-grid">
+          <div class="material-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <div class="material-info">
+              <h3 class="material-title">Laws of Motion Notes</h3>
+              <div class="material-meta">PDF • 4.2 MB • Chapter 4</div>
+              <a href="#" class="btn-download-sm"><i class="fa-solid fa-download"></i> Download</a>
+            </div>
+          </div>
+          <div class="material-card">
+            <i class="fa-solid fa-file-pdf pdf-icon"></i>
+            <div class="material-info">
+              <h3 class="material-title">Thermodynamics Formulas</h3>
+              <div class="material-meta">PDF • 1.5 MB • Chapter 12</div>
+              <a href="#" class="btn-download-sm"><i class="fa-solid fa-download"></i> Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 NexusEdu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

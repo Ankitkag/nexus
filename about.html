@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Nexus Education</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .about-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .teacher-img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .mission-box {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      margin-top: 40px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation (Same as index.html) -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-graduation-cap"></i>
+        NexusEdu
+      </a>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Live Classes</a></li>
+        <li><a href="library.html">Video Library</a></li>
+        <li><a href="materials.html">Study Material</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="classes.html" class="btn btn-primary" style="color: white;">Join Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Empowering students through quality online education.</p>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="about-layout">
+        <div>
+          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Teacher" class="teacher-img">
+        </div>
+        <div>
+          <h2 style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 20px;">Meet Your Instructor</h2>
+          <h3 style="font-size: 1.5rem; margin-bottom: 15px;">Dr. Vikram Singh</h3>
+          <p style="color: var(--text-light); margin-bottom: 20px;">With over 15 years of teaching experience in Mathematics and Science, Dr. Singh has helped thousands of students achieve their academic goals. He believes in making complex concepts easy to understand through practical examples and logical reasoning.</p>
+          
+          <div style="margin-bottom: 30px;">
+            <h4 style="margin-bottom: 10px; color: var(--primary-blue);">Subjects Expertise:</h4>
+            <ul style="color: var(--text-light); line-height: 2;">
+              <li><i class="fa-solid fa-check" style="color: #10b981; margin-right: 10px;"></i> Advanced Mathematics (Calculus, Algebra)</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981; margin-right: 10px;"></i> Physics (Mechanics, Electromagnetism)</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981; margin-right: 10px;"></i> Competitive Exam Preparation (JEE/NEET)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission-box">
+        <h2 style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 20px;">Our Mission</h2>
+        <p style="font-size: 1.1rem; color: var(--text-light); max-width: 800px; margin: 0 auto;">Our mission is to democratize education by providing high-quality, accessible, and affordable online learning resources. We strive to create an engaging learning environment where every student has the tools and guidance they need to succeed academically and build a strong foundation for their future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Same as index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 NexusEdu. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -56,3 +56,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// 🔥 TOGGLE FUNCTION (rope click)
+function toggleShutter() {
+  const shutter = document.querySelector(".shutter");
+  const rope = document.querySelector(".rope");
+
+  if (!shutter || !rope) return;
+
+  // rope animation
+  rope.classList.add("pull");
+
+  setTimeout(() => {
+    rope.classList.remove("pull");
+  }, 400);
+
+  // shutter toggle
+  shutter.classList.toggle("active");
+}
+
+
+// 🔥 AUTO ADD ROPE + SHUTTER
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Rope
+  const rope = document.createElement("div");
+  rope.className = "rope";
+  rope.innerHTML = `<div class="handle"></div>`;
+  rope.onclick = toggleShutter;
+
+  // Shutter
+  const shutter = document.createElement("div");
+  shutter.className = "shutter";
+  shutter.innerHTML = `
+    <div class="shutter-content">
+      <h2>✨ Welcome to NexusEdu</h2>
+    </div>
+  `;
+
+  document.body.appendChild(rope);
+  document.body.appendChild(shutter);
+
+});
